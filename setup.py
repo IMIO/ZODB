@@ -25,7 +25,7 @@ long_description = read("README.rst") + "\n\n" + read("CHANGES.rst")
 
 setup(
     name="ZODB",
-    version='6.2.dev0',
+    version='6.1+imio1',
     author="Jim Fulton",
     author_email="jim@zope.com",
     maintainer="Zope Foundation and Contributors",

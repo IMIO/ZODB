@@ -2,8 +2,8 @@
  Change History
 ================
 
-6.2 (unreleased)
-================
+6.1+imio1 (2026-01-15)
+======================
 
 - Truncate overly long descriptions in FileStorage transaction
   to avoid struct.pack errors.
