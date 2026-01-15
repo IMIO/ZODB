@@ -787,6 +787,14 @@ class FileStorage(
 
     def _begin(self, tid, u, d, e):
         self._nextpos = 0
+
+        # We have edge cases where description is longer than 65535 bytes.
+        # We can safely truncate it to avoid struct.pack errors.
+        if len(d) > 65535:
+            logger.warning("Truncating description to 65535 bytes")
+            d = d[:65535]
+        self._ude = (u, d, e)
+
         self._thl = TRANS_HDR_LEN + len(u) + len(d) + len(e)
         if self._thl > 65535:
             # one of u, d, or e may be > 65535

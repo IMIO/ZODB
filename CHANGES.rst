@@ -5,6 +5,9 @@
 6.2 (unreleased)
 ================
 
+- Truncate overly long descriptions in FileStorage transaction
+  to avoid struct.pack errors.
+
 
 6.1 (2025-10-01)
 ================
