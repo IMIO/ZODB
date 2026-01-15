@@ -2,6 +2,12 @@
  Change History
 ================
 
+6.1+imio2 (unreleased)
+======================
+
+- Nothing changed yet.
+
+
 6.1+imio1 (2026-01-15)
 ======================
 
